@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CFRAT App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+	<style>
+		#mySidebar{width:75%;}
+	</style>
+</head>
+<body>
+<!--SIDE BAR MENU-->
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+        <div class="w3-container w3-theme-d2">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span><br>
+            <div class="w3-padding w3-center">
+                <img src="images/cfrat-LogoNarrowWhite.png" alt="CFRAT" style="width:75%; max-width: 200px; padding-bottom: 20px;">
+            </div>
+        </div>
+        <a class="w3-bar-item w3-button" href="index.html"><img src="images/Available.jpeg" alt="" style="width:50%; max-width: 100px; padding-right: 10px;">Availability</a>
+        <a class="w3-bar-item w3-button" href="patient.html"><img src="images/PFR.jpeg" alt="" style="width:50%; max-width: 100px; padding-right: 10px;">Patient Report Form</a>
+        <a class="w3-bar-item w3-button" href="medi.html"><img src="images/Medi-Kit.jpeg" alt="" style="width:50%; max-width: 100px; padding-right: 10px;">Medi-Kit Monthly Check</a>
+    </nav>
+<!--HEADER-->
+	<header class="w3-top w3-bar w3-theme">
+    	<button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" onclick="openSidebar()" style="padding-top:15px;">&#9776;</button>
+        <h2 class="w3-bar-item"><img src="images/cfrat-Logo-white.png" alt="CFRAT" style="width:65px; padding-right: 20px;">PRF</h2>
+    </header>
+<!--MAIN-->
+	<div class="w3-container" style="margin:80px 0px 50px 0px;">
+		
+    <iframe
+      id="JotFormIFrame-80995739825375"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotformeu.com/80995739825375"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+	  max-height: 75vh;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-80995739825375");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+	</div>
+<!--FOOTER-->
+	<footer class="w3-container w3-bottom w3-theme w3-margin-top">
+		<h6>Created by 54 Degrees design</h6>
+	</footer>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+		closeSidebar();
+		function openSidebar() {
+			if(document.getElementById("mySidebar").style.display == "none")
+				document.getElementById("mySidebar").style.display = "block";
+			else
+				document.getElementById("mySidebar").style.display = "none";
+			}
+		function closeSidebar() {
+			document.getElementById("mySidebar").style.display = "none";
+		}
+	</script>
+</body>
