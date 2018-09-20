@@ -70,6 +70,7 @@ var app = {
 	  window.plugins.OneSignal
     .startInit("9815757e-0345-4718-a9a7-a2d996f29cca")
     .handleNotificationOpened(notificationOpenedCallback)
+	.inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
     .endInit();
 	}, false);
 };
