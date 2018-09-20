@@ -1,13 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.CFRAT" version="1.0" android-versionCode="1001" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>CFRAT</name>
-    <description>
+    
+	<description>
         PhoneGap app for CFRAT.
     </description>
-    <author email="info@54degreeesdesign.com" href="https://54degreesdesign.com/">
+    
+	<author email="info@54degreeesdesign.com" href="https://54degreesdesign.com/">
         54 Team
     </author>
-    <content src="index.html" />
+    
+	<content src="index.html" />
     <access origin="*" />
 
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
@@ -27,8 +30,8 @@
 	<preference name="WindowsToastCapable" value="true" />
 	
 	
-	<!-- CFRAT App Icon -->
-	<icon src="icon.png" />
+	<!-- CFRAT App Icon 
+	<icon src="icon.png" />-->
 
 	<!-- Use android 8 plus-->
 	<preference name="android-minSdkVersion" value="26" />
