@@ -17,7 +17,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
 	
 	<!-- Add Onesignal push -->
-	<plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
+	<!-- <plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" /> -->
 
 	<!-- Requires cli-8.0.0 but we recommend using the latest version. -->
 	<preference name="phonegap-version" value="cli-8.0.0" />
@@ -25,8 +25,8 @@
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="android-minSdkVersion" value="15" />
 
-	<!-- CFRAT App Icon 
-	<icon src="icon.png" />-->
+	<!-- CFRAT App Icon -->
+	<icon src="icon.png" />
 
 	<!-- Use android 8 plus-->
 	<preference name="android-minSdkVersion" value="26" />
