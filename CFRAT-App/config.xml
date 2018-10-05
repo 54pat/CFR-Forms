@@ -26,7 +26,7 @@
 	<preference name="android-minSdkVersion" value="15" />
 
 	<!-- CFRAT App Icon -->
-	<icon src="icon.png" />
+	<icon src="www/icon.png" />
 
 	<!-- Use android 8 plus-->
 	<preference name="android-minSdkVersion" value="26" />
