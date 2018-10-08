@@ -27,7 +27,10 @@
 
 	<!-- CFRAT App Icon -->
 	<icon src="www/icon.png" />
-
+	
+	<!-- iPhone Spotlight and Settings Icon -->
+    <icon src="www/images/icon.png" platform="ios" width="29" height="29" />
+	
 	<!-- Use android 8 plus-->
 	<preference name="android-minSdkVersion" value="26" />
     
