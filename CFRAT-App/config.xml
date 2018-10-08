@@ -31,7 +31,7 @@
     <icon src="www/images/icon.png" platform="ios" width="29" height="29" />
 	
 	<!-- iPhone and iPod touch -->
-<	<splash src="Default.png" platform="ios" width="320" height="480" />
+	<splash src="Default.png" platform="ios" width="320" height="480" />
 	<splash src="Default@2x.png" platform="ios" width="640" height="960" />
 
 	<!-- iPhone 5 / iPod Touch (5th Generation) -->
