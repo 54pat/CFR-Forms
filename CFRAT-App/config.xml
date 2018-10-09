@@ -17,7 +17,11 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
 	
 	<!-- White list alowed sites-->
-	<!-- Allow all unrecognized URLs to open installed apps -->
+	<!-- Allow URLs to open installed apps -->
+	<feature name="IntentAndNavigationFilter">
+    <param name="ios-package" value="CDVIntentAndNavigationFilter"/>
+    <param name="onload" value="true"/>
+	</feature>
 	<allow-intent href="https://www.54degreesdesign.com" />
 	
 	<!-- Add Onesignal push -->
