@@ -15,7 +15,8 @@
 
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
-	<plugin name="cordova-plugin-inappbrowser-wkwebview" spec="~1.0.11"/>
+	<plugin name="cordova-plugin-inappbrowser-wkwebview"/>
+	<plugin name="cordova-plugin-wkwebview-engine"/>
 	
 	<!-- White list alowed sites-->
 	<!-- Allow all unrecognized URLs to open installed apps -->
