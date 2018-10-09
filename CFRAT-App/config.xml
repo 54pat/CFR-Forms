@@ -16,6 +16,10 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
 	
+	<!-- White list alowed sites-->
+	<!-- Allow all unrecognized URLs to open installed apps -->
+	<allow-intent href="*" />
+	
 	<!-- Add Onesignal push -->
 	<!-- <plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" /> -->
 
