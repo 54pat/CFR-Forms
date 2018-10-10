@@ -36,7 +36,7 @@
 	<preference name="android-build-tool" value="gradle" />
 	<!--<preference name="android-minSdkVersion" value="15" />-->
 	<!-- Use android 8 plus-->
-	<preference name="android-minSdkVersion" value="26" />
+	<!--<preference name="android-minSdkVersion" value="26" />-->
 
 	<!-- CFRAT App Icon -->
 	<icon src="www/icon.png" />
