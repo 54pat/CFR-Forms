@@ -65,8 +65,9 @@
 	<icon src="res/icon/ios/icon-83.5@2x.png" width="167" height="167"/>
 	
 	<!-- Splash screen icons -->
+	<!--
 	<splash src="res/icon/ios/splash.png" width="640" height="1136"/>
-<!--
+
     <splash src="res/icon/ios/splash.png" width="750" height="1334"/>
 	<splash src="res/icon/ios/splash.png" width="1242" height="2208"/>
     <splash src="res/icon/ios/splash.png" width="2208" height="1242"/>
@@ -78,7 +79,7 @@
     <splash src="res/icon/ios/splash.png" width="768" height="1024"/>
     <splash src="res/icon/ios/splash.png" width="640" height="960"/>
     <splash src="res/icon/ios/splash.png" width="320" height="480"/>
-	-->
+-->
 	</platform>
 	
 	<!--Android Icon set -->
