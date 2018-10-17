@@ -35,6 +35,7 @@
 	<!-- Requires cli-8.0.0 but we recommend using the latest version. -->
 	<preference name="phonegap-version" value="cli-8.0.0" />
 	<preference name="android-build-tool" value="gradle" />
+	<preference name="AutoHideSplashScreen" value="true" />
 	<!--<preference name="android-minSdkVersion" value="15" />-->
 	<!-- Use android 8 plus-->
 	<!--<preference name="android-minSdkVersion" value="26" />-->
@@ -65,6 +66,7 @@
 	<icon src="res/icon/ios/icon-167.png" width="167" height="167"/>
 	<icon src="res/icon/ios/icon-83.5@2x.png" width="167" height="167"/>
 	
+	<splash src="res/screen/ios/Default@2x~universal~anyany.png" />
 	<!-- Splash screen icons -->
 	<!--
 	<splash src="res/icon/ios/splash.png" width="320" height="480" />
