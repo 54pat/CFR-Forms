@@ -66,7 +66,7 @@
 	
 	<!-- Splash screen icons -->
 	
-	<splash src="res/icon/ios/splash.png" width="640" height="1136"/>
+	<splash src="res/icon/ios/splash.png" width="320" height="480" />
 <!--
     <splash src="res/icon/ios/splash.png" width="750" height="1334"/>
 	<splash src="res/icon/ios/splash.png" width="1242" height="2208"/>
