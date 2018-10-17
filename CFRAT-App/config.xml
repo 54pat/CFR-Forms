@@ -17,7 +17,7 @@
 	<!-- inappbroswerused to allow app to refernceexternal sites -->	
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
-	<plugin name="SplashScreen" value="CDVSplashScreen" />
+	<plugin name="SplashScreen" spec="~5.0.2" />
 	
 
 	<!-- Allow URLs to open installed apps -->
